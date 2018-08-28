@@ -37,7 +37,7 @@ public class Add_Equip extends AppCompatActivity {
 
                 Toast.makeText(Add_Equip.this, "Add " + equip_name + " success.", Toast.LENGTH_SHORT).show();
                 Intent intentToMain = new Intent(getApplicationContext(), MainActivity.class);
-                //startActivity(intentToMain);
+                startActivity(intentToMain);
             }
         });
 
