@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button btnAddEquipt = findViewById(R.id.btnAddEquip);
         Button btnEsitmate = findViewById(R.id.btn_menu_estimate);
+        Button btnHistory = findViewById(R.id.btn_menu_history);
 
         btnAddEquipt.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,6 +31,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intentMenuEstimate = new Intent(getApplicationContext(), EstinateActivity.class);
                 startActivity(intentMenuEstimate);
+            }
+        });
+
+        btnHistory.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentMenuHistory = new Intent(getApplicationContext(), HistoryActivity.class);
+                startActivity(intentMenuHistory);
             }
         });
     }

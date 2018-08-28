@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Add_Equip" />
-        <activity android:name=".EstinateActivity"></activity>
+        <activity android:name=".EstinateActivity" />
+        <activity android:name=".HistoryActivity"></activity>
     </application>
 
 </manifest>

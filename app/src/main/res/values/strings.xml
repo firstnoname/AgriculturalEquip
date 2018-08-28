@@ -3,9 +3,12 @@
     <string name="add_equip">เพิ่มอุปกรณ์</string>
     <string name="btn_buy">ซื้อ</string>
     <string name="btn_menu_estimate">ประเมิณราคา</string>
+    <string name="btn_history">ดูประวัติการซื้อ</string>
 
     <string name="hint_equip_name">ชื่อรุ่น</string>
     <string name="hint_equip_price">ราคาเครื่อง</string>
+
+    <string name="txt_history">ประวัติการซื้อ</string>
 
     <string name="starter">จานกระตุก</string>
     <string name="fuel_tank">ถังน้ำมัน</string>
@@ -34,6 +37,7 @@
     <string name="paint">ทำสี</string>
 
     <string-array name="planets_array">
+        <item>กรุณาเลือกอุปกรณ์</item>
         <item>G200</item>
         <item>GX35</item>
         <item>T200</item>

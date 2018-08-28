@@ -19,6 +19,7 @@ public class Add_Equip extends AppCompatActivity {
 
     CheckBox cbStarter,cbFuelTank,cbAirFilter,cbCarburetor,cbCylinder,cbBallValve,cbMuffler,cbSwitchOnOff,cbCoil,cbFuelTankCap,cbOilTankCap,cbSparkPlug,cbControlSwitch,cbBrushCutterBlade,cbGearDiver,cbMainPipe,cbShaft,cbAirChamber,cbAdjustSet,cbDischargeMetal,cbSuctionMetal,cbPistonSet,
     cbStarterRopeReel,cbPressureGauge,cbPaint;
+
     Equipment objEquip;
 
     String equip_name;
