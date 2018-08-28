@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">AgriculturalEquip</string>
+    <string name="add_equip">เพิ่มอุปกรณ์</string>
+    <string name="btn_buy">ซื้อ</string>
+    <string name="btn_menu_estimate">ประเมิณราคา</string>
+
+    <string name="hint_equip_name">ชื่อรุ่น</string>
+    <string name="hint_equip_price">ราคาเครื่อง</string>
+
+    <string name="starter">จานกระตุก</string>
+    <string name="fuel_tank">ถังน้ำมัน</string>
+    <string name="air_filter">หม้อกรองอากาศ</string>
+    <string name="carburetor">คาร์บูเรเตอร์</string>
+    <string name="cylinder">เสื้อสูบ</string>
+    <string name="ball_valve_switch_oil">ก๊อกน้ำมัน</string>
+    <string name="muffler">ท่อไอเสีย</string>
+    <string name="switch_on_off">สวิตปิด เปิด</string>
+    <string name="coil">คอยล์</string>
+    <string name="fuel_tank_cap">ฝาถังน้ำมัน</string>
+    <string name="oil_tank_cap">ฝาถังน้ำมันเครื่อง</string>
+    <string name="spark_plug">ปลั๊กหัวเทียน</string>
+    <string name="control_switch">มือเร่ง</string>
+    <string name="brush_cutter_blade">ใบมีด</string>
+    <string name="gear_diver">คอตัดหญ้า</string>
+    <string name="main_pipe">กระบอกหาง</string>
+    <string name="shaft">แกนเพลา</string>
+    <string name="air_chamber">หม้อลม</string>
+    <string name="adjust_set">ตัวตั้งโปโล</string>
+    <string name="discharge_metal">ท่อนดูด</string>
+    <string name="suction_metal">ท่อนส่ง</string>
+    <string name="piston_set">ลูกสูบ</string>
+    <string name="starter_rope_reel">มู่เลย์</string>
+    <string name="pressure_gauge">เกย์วัดความดัน</string>
+    <string name="paint">ทำสี</string>
+
+    <string-array name="planets_array">
+        <item>G200</item>
+        <item>GX35</item>
+        <item>T200</item>
+        <item>TM31</item>
+        <item>GX160</item>
+    </string-array>
+
+</resources>
