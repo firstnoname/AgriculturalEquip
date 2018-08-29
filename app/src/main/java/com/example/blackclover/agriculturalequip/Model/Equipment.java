@@ -5,13 +5,15 @@ package com.example.blackclover.agriculturalequip.Model;
  */
 
 public class Equipment {
+    private int id_equip;
     private String starter,fuelTank,air_filter,carburetor,cylinder,ball_valve_switch_oil,muffler,
             switch_on_off,coil,fuel_tank_cap,oil_tank_cap,spark_plug,control_switch,brush_cutter_blade,
             gear_diver,main_pipe,shaft,air_chamber,adjust_set,discharge_metal,suction_metal,piston_set,
             starter_rope_reel,pressure_gauge, paint;
 
 
-    public Equipment(String starter, String fuelTank, String air_filter, String carburetor, String cylinder, String ball_valve_switch_oil, String muffler, String switch_on_off, String coil, String fuel_tank_cap, String oil_tank_cap, String spark_plug, String control_switch, String brush_cutter_blade, String gear_diver, String main_pipe, String shaft, String air_chamber, String adjust_set, String discharge_metal, String suction_metal, String piston_set, String starter_rope_reel, String pressure_gauge, String paint) {
+    public Equipment(int id_equip, String starter, String fuelTank, String air_filter, String carburetor, String cylinder, String ball_valve_switch_oil, String muffler, String switch_on_off, String coil, String fuel_tank_cap, String oil_tank_cap, String spark_plug, String control_switch, String brush_cutter_blade, String gear_diver, String main_pipe, String shaft, String air_chamber, String adjust_set, String discharge_metal, String suction_metal, String piston_set, String starter_rope_reel, String pressure_gauge, String paint) {
+        this.id_equip = id_equip;
         this.starter = starter;
         this.fuelTank = fuelTank;
         this.air_filter = air_filter;
@@ -37,6 +39,14 @@ public class Equipment {
         this.starter_rope_reel = starter_rope_reel;
         this.pressure_gauge = pressure_gauge;
         this.paint = paint;
+    }
+
+    public int getId_equip() {
+        return id_equip;
+    }
+
+    public void setId_equip(int id_equip) {
+        this.id_equip = id_equip;
     }
 
     public String getStarter() {

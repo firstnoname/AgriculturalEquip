@@ -36,12 +36,13 @@ public class Add_Equip extends AppCompatActivity {
             public void onClick(View view) {
                 equip_name = String.valueOf(edt_name.getText());
 
-                Toast.makeText(Add_Equip.this, "Add " + equip_name + " success.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Add_Equip.this, "Add " + equip_name + " success.",
+                        Toast.LENGTH_SHORT).show();
+
                 Intent intentToMain = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intentToMain);
             }
         });
-
 
     }
 
