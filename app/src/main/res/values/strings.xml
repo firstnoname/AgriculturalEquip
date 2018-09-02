@@ -9,6 +9,8 @@
 
     <string name="hint_equip_name">ชื่อรุ่น</string>
     <string name="hint_equip_price">ราคาเครื่อง</string>
+    <string name="hint_name_info">ใส่ชื่อ</string>
+    <string name="hint_identification_info">ใส่รหัสบัตรประชาชน</string>
 
     <string name="txt_history">ประวัติการซื้อ</string>
 

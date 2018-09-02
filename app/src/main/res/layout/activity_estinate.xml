@@ -6,18 +6,6 @@
     android:layout_height="match_parent"
     tools:context="com.example.blackclover.agriculturalequip.EstinateActivity">
 
-    <Button
-        android:id="@+id/btnAddEquip"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:text="@string/btn_buy"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="0dp"
@@ -26,7 +14,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnAddEquip"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -34,7 +22,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <Spinner
                 android:id="@+id/spinner_list_equip"
@@ -43,148 +31,176 @@
                 android:layout_margin="15dp" />
 
             <CheckBox
-                android:id="@+id/checkBox4"
+                android:id="@+id/cbStarter"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/starter" />
 
             <CheckBox
-                android:id="@+id/checkBox5"
+                android:id="@+id/cbFuelTank"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/fuel_tank" />
 
             <CheckBox
-                android:id="@+id/checkBox6"
+                android:id="@+id/cbAirFilter"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/air_filter" />
 
             <CheckBox
-                android:id="@+id/checkBox7"
+                android:id="@+id/cbCarburetor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/carburetor" />
 
             <CheckBox
-                android:id="@+id/checkBox16"
+                android:id="@+id/cbCylinder"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/cylinder" />
 
             <CheckBox
-                android:id="@+id/checkBox17"
+                android:id="@+id/cbMuffler"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/muffler" />
 
             <CheckBox
-                android:id="@+id/checkBox18"
+                android:id="@+id/cbSwitchOnOff"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/switch_on_off" />
 
             <CheckBox
-                android:id="@+id/checkBox19"
+                android:id="@+id/cbCoil"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/coil" />
 
             <CheckBox
-                android:id="@+id/checkBox12"
+                android:id="@+id/cbFuelTankCap"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/fuel_tank_cap" />
 
             <CheckBox
-                android:id="@+id/checkBox13"
+                android:id="@+id/cbOilTankCap"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/oil_tank_cap" />
 
             <CheckBox
-                android:id="@+id/checkBox14"
+                android:id="@+id/cbSparkPlug"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/spark_plug" />
 
             <CheckBox
-                android:id="@+id/checkBox15"
+                android:id="@+id/cbControlSwitch"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/control_switch" />
 
             <CheckBox
-                android:id="@+id/checkBox8"
+                android:id="@+id/cbBrushCutterBlade"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/brush_cutter_blade" />
 
             <CheckBox
-                android:id="@+id/checkBox9"
+                android:id="@+id/cbGearDiver"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/gear_diver" />
 
             <CheckBox
-                android:id="@+id/checkBox10"
+                android:id="@+id/cbMainPipe"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/main_pipe" />
 
             <CheckBox
-                android:id="@+id/checkBox11"
+                android:id="@+id/cbShaft"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/shaft" />
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/cbAirChamber"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/air_chamber" />
 
             <CheckBox
-                android:id="@+id/checkBox24"
+                android:id="@+id/cbAdjustSet"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/adjust_set" />
 
             <CheckBox
-                android:id="@+id/checkBox23"
+                android:id="@+id/cbDischargeMetal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/discharge_metal" />
 
             <CheckBox
-                android:id="@+id/checkBox22"
+                android:id="@+id/cbSuctionMetal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/suction_metal" />
 
             <CheckBox
-                android:id="@+id/checkBox21"
+                android:id="@+id/cbPistonSet"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/piston_set" />
 
             <CheckBox
-                android:id="@+id/checkBox20"
+                android:id="@+id/cbRopeReel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/starter_rope_reel" />
 
             <CheckBox
-                android:id="@+id/checkBox3"
+                android:id="@+id/cbPressureGauge"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/pressure_gauge" />
 
             <CheckBox
-                android:id="@+id/checkBox2"
+                android:id="@+id/cbPaint"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/paint" />
+
+            <EditText
+                android:id="@+id/edt_name_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name" />
+
+            <EditText
+                android:id="@+id/edt_tel_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/hint_identification_info" />
+
+            <Button
+                android:id="@+id/btnAddEquip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:text="@string/btn_buy"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
 
         </LinearLayout>
     </ScrollView>

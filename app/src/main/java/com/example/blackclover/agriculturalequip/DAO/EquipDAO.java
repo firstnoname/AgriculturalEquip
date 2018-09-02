@@ -17,9 +17,8 @@ public interface EquipDAO {
     @Query("SELECT * FROM equipments WHERE id_equip IN (:equipIds)")
     List<Equip> loadAllByIds(int[] equipIds);
 
-    @Query("SELECT * FROM equipments WHERE starter LIKE :start AND "
-            + "fuel_tank LIKE :fuel LIMIT 1")
-    Equip findByName(String start, String fuel);
+    @Query("SELECT * FROM equipments WHERE equip_name LIKE :equipname")
+    Equip findByName(String equipname);
 
     @Insert
     void insertAll(Equip... equips);

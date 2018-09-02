@@ -24,7 +24,7 @@ public class EquipAddFragment extends Fragment {
     private EditText edtName, edtPrice;
     private CheckBox cbStarter, cbFuelTank, cbAirFilter, cbCarburetor, cbCylinder, cbMuffler,
             cbSwitchOnOff, cbCoil, cbFuelTankCap, cbOilTankCap, cbSparkPlug, cbControlSwitch,
-            cbBrushCutterBlade, cbGearDiver, cbMainPipi, cbShaft, cbAirChamber, cbAdjustSet,
+            cbBrushCutterBlade, cbGearDiver, cbMainPipe, cbShaft, cbAirChamber, cbAdjustSet,
             cbDischargeMetal, cbSuctionMetal, cbPistonSet, cbRopeReel, cbPressureGauge, cbPaint;
 
 
@@ -46,157 +46,186 @@ public class EquipAddFragment extends Fragment {
             public void onClick(View view) {
                 String equipName = String.valueOf(edtName.getText());
                 String equipPrice = String.valueOf(edtPrice.getText());
+                String starter, fuelTank, airFilter, carburetor, cylinder, muffler, switchOnOff,
+                        coil, fuelTankCap, oilTankCap, sparkPlug, controlSwitch, brushCutterBlade,
+                        gearDiver, mainPipe, shaft, airChamber, adjustSet, dischargeMetal, suctionMetal,
+                        pistonSet, ropeReel, pressureGauge, paint;
 
                 if (cbStarter.isChecked()) {
-                    String starter = String.valueOf(cbStarter.getText());
+                    starter = String.valueOf(cbStarter.getText());
                 } else {
-
+                    starter = "0";
                 }
 
                 if (cbFuelTank.isChecked()) {
-                    String fuelTank = String.valueOf(cbFuelTank.getText());
+                    fuelTank = String.valueOf(cbFuelTank.getText());
                 } else {
-
+                    fuelTank = "0";
                 }
 
                 if (cbAirFilter.isChecked()) {
-                    String airFilter = String.valueOf(cbAirFilter.getText());
+                    airFilter = String.valueOf(cbAirFilter.getText());
                 } else {
-
+                    airFilter = "0";
                 }
 
                 if (cbCarburetor.isChecked()) {
-                    String carburetor = String.valueOf(cbCarburetor.getText());
+                    carburetor = String.valueOf(cbCarburetor.getText());
                 } else {
-
+                    carburetor = "0";
                 }
 
                 if (cbCylinder.isChecked()) {
-                    String cylinder = String.valueOf(cbCylinder.getText());
+                    cylinder = String.valueOf(cbCylinder.getText());
                 }else{
-
+                    cylinder = "0";
                 }
 
                 if (cbMuffler.isChecked()) {
-                    String muffler = String.valueOf(cbMuffler.getText());
+                    muffler = String.valueOf(cbMuffler.getText());
                 } else {
-
+                    muffler = "0";
                 }
 
                 if (cbSwitchOnOff.isChecked()) {
-                    String switchOnOff = String.valueOf(cbSwitchOnOff.getText());
+                    switchOnOff = String.valueOf(cbSwitchOnOff.getText());
                 } else {
-
+                    switchOnOff = "0";
                 }
 
                 if (cbCoil.isChecked()) {
-                    String coil = String.valueOf(cbCoil.getText());
+                    coil = String.valueOf(cbCoil.getText());
                 } else {
-
+                    coil = "0";
                 }
 
                 if (cbFuelTankCap.isChecked()) {
-                    String fuelTankCap = String.valueOf(cbFuelTankCap.getText());
+                    fuelTankCap = String.valueOf(cbFuelTankCap.getText());
                 } else {
-
+                    fuelTankCap = "0";
                 }
 
                 if (cbOilTankCap.isChecked()) {
-                    String oilTankCap = String.valueOf(cbOilTankCap.getText());
+                    oilTankCap = String.valueOf(cbOilTankCap.getText());
                 } else {
-
+                    oilTankCap = "0";
                 }
 
                 if (cbSparkPlug.isChecked()) {
-                    String sparkPlug = String.valueOf(cbSparkPlug.getText());
+                    sparkPlug = String.valueOf(cbSparkPlug.getText());
                 } else {
-
+                    sparkPlug = "0";
                 }
 
                 if (cbControlSwitch.isChecked()) {
-                    String controlSwitch = String.valueOf(cbControlSwitch.getText());
+                    controlSwitch = String.valueOf(cbControlSwitch.getText());
                 } else {
-
+                    controlSwitch = "0";
                 }
 
                 if (cbBrushCutterBlade.isChecked()) {
-                    String brushCutterBlade = String.valueOf(cbBrushCutterBlade.getText());
+                    brushCutterBlade = String.valueOf(cbBrushCutterBlade.getText());
                 } else {
-
+                    brushCutterBlade = "0";
                 }
 
                 if (cbGearDiver.isChecked()) {
-                    String gearDiver = String.valueOf(cbGearDiver.getText());
+                    gearDiver = String.valueOf(cbGearDiver.getText());
                 } else {
-
+                    gearDiver = "0";
                 }
 
-                if (cbMainPipi.isChecked()) {
-                    String mainPipe = String.valueOf(cbMainPipi.getText());
+                if (cbMainPipe.isChecked()) {
+                    mainPipe = String.valueOf(cbMainPipe.getText());
                 } else {
-
+                    mainPipe = "0";
                 }
 
                 if (cbShaft.isChecked()) {
-                    String shaft = String.valueOf(cbShaft.getText());
+                    shaft = String.valueOf(cbShaft.getText());
                 } else {
-
+                    shaft = "0";
                 }
 
                 if (cbAirChamber.isChecked()) {
-                    String airChamber = String.valueOf(cbAirChamber.getText());
+                    airChamber = String.valueOf(cbAirChamber.getText());
                 } else {
-
+                    airChamber = "0";
                 }
 
                 if (cbAdjustSet.isChecked()) {
-                    String adjustSet = String.valueOf(cbAdjustSet.getText());
+                    adjustSet = String.valueOf(cbAdjustSet.getText());
                 } else {
-
+                    adjustSet = "0";
                 }
 
                 if (cbDischargeMetal.isChecked()) {
-                    String dischargeMetal = String.valueOf(cbDischargeMetal.getText());
+                    dischargeMetal = String.valueOf(cbDischargeMetal.getText());
                 } else {
-
+                    dischargeMetal = "0";
                 }
 
                 if (cbSuctionMetal.isChecked()) {
-                    String suctionMetal = String.valueOf(cbSuctionMetal.getText());
+                    suctionMetal = String.valueOf(cbSuctionMetal.getText());
                 } else {
-
+                    suctionMetal = "0";
                 }
 
                 if (cbPistonSet.isChecked()) {
-                    String pistonSet = String.valueOf(cbPistonSet.getText());
+                    pistonSet = String.valueOf(cbPistonSet.getText());
                 } else {
-
+                    pistonSet = "0";
                 }
 
                 if (cbRopeReel.isChecked()) {
-                    String ropeReel = String.valueOf(cbRopeReel.getText());
+                    ropeReel = String.valueOf(cbRopeReel.getText());
                 } else {
-
+                    ropeReel = "0";
                 }
 
                 if (cbPressureGauge.isChecked()) {
-                    String pressureGauge = String.valueOf(cbPressureGauge.getText());
+                    pressureGauge = String.valueOf(cbPressureGauge.getText());
                 } else {
-
+                    pressureGauge = "0";
                 }
 
                 if (cbPaint.isChecked()) {
-                    String paint = String.valueOf(cbPaint.getText());
+                    paint = String.valueOf(cbPaint.getText());
                 } else {
-
+                    paint = "0";
                 }
 
                 Equip objEquipment = new Equip();
                 objEquipment.setEquipname(equipName);
                 objEquipment.setEquipPrice(equipPrice);
+                objEquipment.setStarter(starter);
+                objEquipment.setFuelTank(fuelTank);
+                objEquipment.setAirFilter(airFilter);
+                objEquipment.setCarburetor(carburetor);
+                objEquipment.setCylinder(cylinder);
+                objEquipment.setMuffler(muffler);
+                objEquipment.setSwitchOnOff(switchOnOff);
+                objEquipment.setCoil(coil);
+                objEquipment.setFuelTankCap(fuelTankCap);
+                objEquipment.setOilTankCap(oilTankCap);
+                objEquipment.setSparkPlug(sparkPlug);
+                objEquipment.setControlSwitch(controlSwitch);
+                objEquipment.setBrushCutterBlade(brushCutterBlade);
+                objEquipment.setGearDiver(gearDiver);
+                objEquipment.setMainPipe(mainPipe);
+                objEquipment.setShaft(shaft);
+                objEquipment.setAirChamber(airChamber);
+                objEquipment.setAdjustSet(adjustSet);
+                objEquipment.setDischargeMetal(dischargeMetal);
+                objEquipment.setSuctionMetal(suctionMetal);
+                objEquipment.setPistonSet(pistonSet);
+                objEquipment.setStarterRopeReel(ropeReel);
+                objEquipment.setPressureGauge(pressureGauge);
+                objEquipment.setPaint(paint);
+
 
                 Equip_Main_Activity.objAppDatabase.objEquipDAO().insertAll(objEquipment);
-                Toast.makeText(getActivity(), "Equipment has ben added", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), equipName + " has ben added. ", Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -224,7 +253,7 @@ public class EquipAddFragment extends Fragment {
         cbControlSwitch = view.findViewById(R.id.cbControlSwitch);
         cbBrushCutterBlade = view.findViewById(R.id.cbBrushCutterBlade);
         cbGearDiver = view.findViewById(R.id.cbGearDiver);
-        cbMainPipi = view.findViewById(R.id.cbMainPipe);
+        cbMainPipe = view.findViewById(R.id.cbMainPipe);
         cbShaft = view.findViewById(R.id.cbShaft);
         cbAirChamber = view.findViewById(R.id.cbAirChamber);
         cbAdjustSet = view.findViewById(R.id.cbAdjustSet);
