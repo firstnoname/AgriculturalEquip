@@ -234,7 +234,7 @@ public class EquipAddFragment extends Fragment {
     }
 
     private void bindWidget() {
-        btnAddEquip = view.findViewById(R.id.btnAddEquip);
+        btnAddEquip = view.findViewById(R.id.btnPurchase);
 
         edtName = view.findViewById(R.id.txt_name);
         edtPrice = view.findViewById(R.id.txt_price);

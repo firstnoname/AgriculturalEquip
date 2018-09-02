@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.Spinner;
 import android.widget.Toast;
@@ -18,14 +19,18 @@ import java.util.List;
 
 public class EstinateActivity extends AppCompatActivity {
 
+    public static AppDatabase objAppDatabase;
+
     private Spinner spn;
     private List<String> arrList = new ArrayList<>();
-    public static AppDatabase objAppDatabase;
+    private Button btnPurchase;
 
     private CheckBox cbStarter, cbFuelTank, cbAirFilter, cbCarburetor, cbCylinder, cbMuffler,
             cbSwitchOnOff, cbCoil, cbFuelTankCap, cbOilTankCap, cbSparkPlug, cbControlSwitch,
             cbBrushCutterBlade, cbGearDiver, cbMainPipe, cbShaft, cbAirChamber, cbAdjustSet,
             cbDischargeMetal, cbSuctionMetal, cbPistonSet, cbRopeReel, cbPressureGauge, cbPaint;
+
+    private int sum = 0, increaseValue = 0, decreaseValue = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -173,10 +178,85 @@ public class EstinateActivity extends AppCompatActivity {
 
             }
         });
+
+    }
+
+    public void onCheckboxClicked(View view) {
+        boolean checked = ((CheckBox) view).isChecked();
+
+        switch (view.getId()) {
+            case R.id.cbStarter:
+                //Do something.
+                if (cbStarter.isChecked()) {
+                    //If checked call priceCalculation for decrease price.
+                    decreasePriceCalculation(20);
+                } else {
+                    //If unchecked call priceCalculation for increase price.
+                    increasePriceCalculation(20);
+                }
+                break;
+            case R.id.cbFuelTank:
+                break;
+            case R.id.cbAirFilter:
+                break;
+            case R.id.cbCarburetor:
+                break;
+            case R.id.cbCylinder:
+                break;
+            case R.id.cbMuffler:
+                break;
+            case R.id.cbSwitchOnOff:
+                break;
+            case R.id.cbCoil:
+                break;
+            case R.id.cbFuelTankCap:
+                break;
+            case R.id.cbOilTankCap:
+                break;
+            case R.id.cbSparkPlug:
+                break;
+            case R.id.cbControlSwitch:
+                break;
+            case R.id.cbBrushCutterBlade:
+                break;
+            case R.id.cbGearDiver:
+                break;
+            case R.id.cbMainPipe:
+                break;
+            case R.id.cbShaft:
+                break;
+            case R.id.cbAirChamber:
+                break;
+            case R.id.cbAdjustSet:
+                break;
+            case R.id.cbDischargeMetal:
+                break;
+            case R.id.cbSuctionMetal:
+                break;
+            case R.id.cbPistonSet:
+                break;
+            case R.id.cbRopeReel:
+                break;
+            case R.id.cbPressureGauge:
+                break;
+            case R.id.cbPaint:
+                break;
+        }
+    }
+
+    private int increasePriceCalculation(int increaseValue){
+        //Unchecked Checkbox.
+        return sum += increaseValue;
+    }
+
+    private int decreasePriceCalculation(int decreaseValue) {
+        //Checked Checkbox.
+        return sum -= decreaseValue;
     }
 
     private void bindWidget() {
         spn = findViewById(R.id.spinner_list_equip);
+        btnPurchase = findViewById(R.id.btnPurchase);
 
         cbStarter = findViewById(R.id.cbStarter);
         cbFuelTank = findViewById(R.id.cbFuelTank);

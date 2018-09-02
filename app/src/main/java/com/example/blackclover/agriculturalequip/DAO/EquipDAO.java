@@ -20,6 +20,7 @@ public interface EquipDAO {
     @Query("SELECT * FROM equipments WHERE equip_name LIKE :equipname")
     Equip findByName(String equipname);
 
+
     @Insert
     void insertAll(Equip... equips);
 

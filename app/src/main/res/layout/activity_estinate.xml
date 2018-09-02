@@ -32,144 +32,169 @@
 
             <CheckBox
                 android:id="@+id/cbStarter"
+                android:onClick="onCheckboxClicked"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/starter" />
 
             <CheckBox
                 android:id="@+id/cbFuelTank"
+                android:onClick="onCheckboxClicked"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/fuel_tank" />
 
             <CheckBox
                 android:id="@+id/cbAirFilter"
+                android:onClick="onCheckboxClicked"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/air_filter" />
 
             <CheckBox
                 android:id="@+id/cbCarburetor"
+                android:onClick="onCheckboxClicked"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/carburetor" />
 
             <CheckBox
                 android:id="@+id/cbCylinder"
+                android:onClick="onCheckboxClicked"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/cylinder" />
 
             <CheckBox
                 android:id="@+id/cbMuffler"
+                android:onClick="onCheckboxClicked"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/muffler" />
 
             <CheckBox
                 android:id="@+id/cbSwitchOnOff"
+                android:onClick="onCheckboxClicked"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/switch_on_off" />
 
             <CheckBox
                 android:id="@+id/cbCoil"
+                android:onClick="onCheckboxClicked"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/coil" />
 
             <CheckBox
                 android:id="@+id/cbFuelTankCap"
+                android:onClick="onCheckboxClicked"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/fuel_tank_cap" />
 
             <CheckBox
                 android:id="@+id/cbOilTankCap"
+                android:onClick="onCheckboxClicked"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/oil_tank_cap" />
 
             <CheckBox
                 android:id="@+id/cbSparkPlug"
+                android:onClick="onCheckboxClicked"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/spark_plug" />
 
             <CheckBox
                 android:id="@+id/cbControlSwitch"
+                android:onClick="onCheckboxClicked"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/control_switch" />
 
             <CheckBox
                 android:id="@+id/cbBrushCutterBlade"
+                android:onClick="onCheckboxClicked"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/brush_cutter_blade" />
 
             <CheckBox
                 android:id="@+id/cbGearDiver"
+                android:onClick="onCheckboxClicked"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/gear_diver" />
 
             <CheckBox
                 android:id="@+id/cbMainPipe"
+                android:onClick="onCheckboxClicked"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/main_pipe" />
 
             <CheckBox
                 android:id="@+id/cbShaft"
+                android:onClick="onCheckboxClicked"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/shaft" />
 
             <CheckBox
                 android:id="@+id/cbAirChamber"
+                android:onClick="onCheckboxClicked"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/air_chamber" />
 
             <CheckBox
                 android:id="@+id/cbAdjustSet"
+                android:onClick="onCheckboxClicked"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/adjust_set" />
 
             <CheckBox
                 android:id="@+id/cbDischargeMetal"
+                android:onClick="onCheckboxClicked"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/discharge_metal" />
 
             <CheckBox
                 android:id="@+id/cbSuctionMetal"
+                android:onClick="onCheckboxClicked"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/suction_metal" />
 
             <CheckBox
                 android:id="@+id/cbPistonSet"
+                android:onClick="onCheckboxClicked"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/piston_set" />
 
             <CheckBox
                 android:id="@+id/cbRopeReel"
+                android:onClick="onCheckboxClicked"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/starter_rope_reel" />
 
             <CheckBox
                 android:id="@+id/cbPressureGauge"
+                android:onClick="onCheckboxClicked"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/pressure_gauge" />
 
+            <!--24 checkbox.-->
             <CheckBox
                 android:id="@+id/cbPaint"
+                android:onClick="onCheckboxClicked"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/paint" />
@@ -179,19 +204,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
+                android:hint="@string/hint_name_info"
+                android:inputType="textPersonName" />
 
             <EditText
                 android:id="@+id/edt_tel_info"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="@string/hint_identification_info" />
+                android:hint="@string/hint_identification_info"
+                android:inputType="textPersonName" />
 
             <Button
-                android:id="@+id/btnAddEquip"
+                android:id="@+id/btnPurchase"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"

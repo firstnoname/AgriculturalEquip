@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btnAddEquipt = findViewById(R.id.btnAddEquip);
+        Button btnAddEquipt = findViewById(R.id.btnPurchase);
         Button btnEsitmate = findViewById(R.id.btn_menu_estimate);
         Button btnHistory = findViewById(R.id.btn_menu_history);
 
