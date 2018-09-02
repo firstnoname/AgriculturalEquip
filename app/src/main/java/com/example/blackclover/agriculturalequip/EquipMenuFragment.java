@@ -14,7 +14,7 @@ import android.widget.Button;
  */
 public class EquipMenuFragment extends Fragment implements View.OnClickListener {
 
-    private Button btnAddEquip;
+    private Button btnAddEquip, btnListEquip, btnDeleteEquip;
 
 
     public EquipMenuFragment() {
@@ -31,6 +31,11 @@ public class EquipMenuFragment extends Fragment implements View.OnClickListener 
         btnAddEquip = view.findViewById(R.id.btn_add_equip);
         btnAddEquip.setOnClickListener(this);
 
+        btnListEquip = view.findViewById(R.id.btn_list_equip);
+        btnListEquip.setOnClickListener(this);
+
+        btnDeleteEquip = view.findViewById(R.id.btn_delete_equip);
+        btnDeleteEquip.setOnClickListener(this);
         return view;
     }
 
@@ -42,6 +47,13 @@ public class EquipMenuFragment extends Fragment implements View.OnClickListener 
                 Equip_Main_Activity.fragmentManager.beginTransaction().replace(R.id.fragment_container,
                         new EquipAddFragment()).commit();
                 break;
+            case R.id.btn_list_equip:
+                Equip_Main_Activity.fragmentManager.beginTransaction().replace(R.id.fragment_container,
+                        new EquipListFragment()).commit();
+                break;
+            case R.id.btn_delete_equip:
+                Equip_Main_Activity.fragmentManager.beginTransaction().replace(R.id.fragment_container,
+                        new EquipDeleteFragment()).commit();
         }
     }
 }

@@ -11,13 +11,13 @@ import java.util.List;
 
 @Dao
 public interface EquipDAO {
-    @Query("SELECT * FROM equip")
+    @Query("SELECT * FROM equipments")
     List<Equip> getAll();
 
-    @Query("SELECT * FROM equip WHERE id_equip IN (:equipIds)")
+    @Query("SELECT * FROM equipments WHERE id_equip IN (:equipIds)")
     List<Equip> loadAllByIds(int[] equipIds);
 
-    @Query("SELECT * FROM equip WHERE starter LIKE :start AND "
+    @Query("SELECT * FROM equipments WHERE starter LIKE :start AND "
             + "fuel_tank LIKE :fuel LIMIT 1")
     Equip findByName(String start, String fuel);
 

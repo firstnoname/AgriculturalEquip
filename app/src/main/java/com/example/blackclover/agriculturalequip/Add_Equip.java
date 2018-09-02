@@ -47,7 +47,7 @@ public class Add_Equip extends AppCompatActivity {
     }
 
     private void bindWidget() {
-        btnAdd = findViewById(R.id.btnAdd);
+        btnAdd = findViewById(R.id.btnAddEquip);
         edt_name = findViewById(R.id.txt_name);
     }
 }

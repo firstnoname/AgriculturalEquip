@@ -4,9 +4,9 @@ import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.PrimaryKey;
 
-@Entity
+@Entity(tableName = "equipments")
 public class Equip {
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
     private int id_equip;
 
     @ColumnInfo(name = "equip_name")

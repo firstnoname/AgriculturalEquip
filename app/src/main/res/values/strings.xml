@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">AgriculturalEquip</string>
     <string name="add_equip">เพิ่มอุปกรณ์</string>
+    <string name="btn_list_equip">รายชื่ออุปกรณ์</string>
+    <string name="btn_delete_equip">ลบอุปกรณ์</string>
     <string name="btn_buy">ซื้อ</string>
     <string name="btn_menu_estimate">ประเมิณราคา</string>
     <string name="btn_history">ดูประวัติการซื้อ</string>
@@ -35,6 +37,8 @@
     <string name="starter_rope_reel">มู่เลย์</string>
     <string name="pressure_gauge">เกย์วัดความดัน</string>
     <string name="paint">ทำสี</string>
+
+    <string name="hint_delete_info">ใส่ชื่ออุปกรณ์</string>
 
     <string-array name="planets_array">
         <item>กรุณาเลือกอุปกรณ์</item>
