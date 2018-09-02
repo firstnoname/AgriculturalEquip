@@ -5,6 +5,7 @@
     <string name="btn_delete_equip">ลบอุปกรณ์</string>
     <string name="btn_buy">ซื้อ</string>
     <string name="btn_menu_estimate">ประเมิณราคา</string>
+    <string name="btn_menu_manage_equipment">จัดการอุปกรณ์</string>
     <string name="btn_history">ดูประวัติการซื้อ</string>
 
     <string name="hint_equip_name">ชื่อรุ่น</string>
