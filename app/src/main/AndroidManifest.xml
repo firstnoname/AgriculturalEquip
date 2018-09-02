@@ -19,7 +19,8 @@
         <activity android:name=".Add_Equip" />
         <activity android:name=".EstinateActivity" />
         <activity android:name=".HistoryActivity" />
-        <activity android:name=".EquipActivity"></activity>
+        <activity android:name=".EquipActivity" />
+        <activity android:name=".Equip_Main_Activity"></activity>
     </application>
 
 </manifest>

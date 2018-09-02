@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //Intent to insert new equipment.
-                Intent intentAddEquip = new Intent(getApplicationContext(), Add_Equip.class);
+                Intent intentAddEquip = new Intent(getApplicationContext(), Equip_Main_Activity.class);
                 startActivity(intentAddEquip);
             }
         });
