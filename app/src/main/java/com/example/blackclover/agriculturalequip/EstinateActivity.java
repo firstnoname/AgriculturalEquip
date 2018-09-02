@@ -19,7 +19,6 @@ import java.util.List;
 public class EstinateActivity extends AppCompatActivity {
 
     private Spinner spn;
-    private static final String[] list = {"กรุณาเลือกอุปกรณ์"};
     private List<String> arrList = new ArrayList<>();
     public static AppDatabase objAppDatabase;
 
