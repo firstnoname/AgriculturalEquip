@@ -398,11 +398,12 @@ public class EstinateActivity extends AppCompatActivity {
                 break;
             case R.id.cbPaint:
                 if (cbPaint.isChecked()) {
-                    Toast.makeText(this, "Decrease", Toast.LENGTH_SHORT).show();
+                    decreasePriceCalculation(20);
                 } else {
-                    Toast.makeText(this, "Increase", Toast.LENGTH_SHORT).show();
-                } 
+                    increasePriceCalculation(20);
+                }
                 break;
+                default:
         }
     }
 
@@ -447,6 +448,6 @@ public class EstinateActivity extends AppCompatActivity {
         cbPistonSet = findViewById(R.id.cbPistonSet);
         cbRopeReel = findViewById(R.id.cbRopeReel);
         cbPressureGauge = findViewById(R.id.cbPressureGauge);
-        cbPaint = findViewById(R.id.cbShaft);
+        cbPaint = findViewById(R.id.cbPaint);
     }
 }
