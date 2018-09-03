@@ -215,6 +215,14 @@
                 android:hint="@string/hint_identification_info"
                 android:inputType="textPersonName" />
 
+            <EditText
+                android:id="@+id/edt_purchase_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/hint_purchase_price"
+                android:inputType="textPersonName" />
+
             <Button
                 android:id="@+id/btnPurchase"
                 android:layout_width="match_parent"
