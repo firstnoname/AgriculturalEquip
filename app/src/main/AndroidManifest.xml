@@ -16,7 +16,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".EstinateActivity" />
+        <activity android:name=".EstimateActivity" />
         <activity android:name=".HistoryActivity" />
         <activity android:name=".EquipActivity" />
         <activity android:name=".Equip_Main_Activity"></activity>

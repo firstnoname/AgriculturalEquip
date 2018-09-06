@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         btnEsitmate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentMenuEstimate = new Intent(getApplicationContext(), EstinateActivity.class);
+                Intent intentMenuEstimate = new Intent(getApplicationContext(), EstimateActivity.class);
                 startActivity(intentMenuEstimate);
             }
         });
