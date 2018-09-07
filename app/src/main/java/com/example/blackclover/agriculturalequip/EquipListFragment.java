@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.blackclover.agriculturalequip.Entity.Equip;
+import com.example.blackclover.agriculturalequip.Entity.Purchase;
 
 import java.util.List;
 
@@ -33,6 +34,7 @@ public class EquipListFragment extends Fragment {
         txtInfo = view.findViewById(R.id.txt_display_equip_info);
 
         List<Equip> equipments = Equip_Main_Activity.objAppDatabase.objEquipDAO().getAll();
+        List<Purchase> purchases = Equip_Main_Activity.objAppDatabase.purchaseDAO().getAll();
 
         String equipInfo = "";
 
@@ -46,6 +48,17 @@ public class EquipListFragment extends Fragment {
                     "Equip name : " + equipName + "\n" +
                     "Equip price : " + equipPrice + "\n" +
                     "Starter : " + starter;
+        }
+
+        for (Purchase purchase : purchases) {
+            int id = purchase.getPurchase_id();
+            String cusName = purchase.getCusName();
+            String purchasePrice = purchase.getPurchasePrice();
+
+            equipInfo = "\n\n" + "Id : " + id + "\n" +
+                    "Customer name : " + cusName + "\n" +
+                    "Purchase price : " + purchasePrice + "\n" +
+                    "Size : " + purchases.size();
         }
 
         txtInfo.setText(equipInfo);

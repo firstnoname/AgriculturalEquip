@@ -1,6 +1,7 @@
 package com.example.blackclover.agriculturalequip;
 
 import android.arch.persistence.room.Room;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -13,6 +14,7 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.example.blackclover.agriculturalequip.Entity.Equip;
+import com.example.blackclover.agriculturalequip.Entity.Purchase;
 import com.example.blackclover.agriculturalequip.utils.AppDatabase;
 
 import java.util.ArrayList;
@@ -25,7 +27,7 @@ public class EstimateActivity extends AppCompatActivity {
     private Spinner spn;
     private List<String> arrList = new ArrayList<>();
     private Button btnPurchase;
-    private EditText edtPurchasePrice;
+    private EditText edtPurchasePrice, edtNameInfo, edtIdNo;
 
     private CheckBox cbStarter, cbFuelTank, cbAirFilter, cbCarburetor, cbCylinder, cbMuffler,
             cbSwitchOnOff, cbCoil, cbFuelTankCap, cbOilTankCap, cbSparkPlug, cbControlSwitch,
@@ -185,7 +187,24 @@ public class EstimateActivity extends AppCompatActivity {
         btnPurchase.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //Get value from CheckBox and send to save
+                String cusName = String.valueOf(edtNameInfo.getText());
+                String cusID = String.valueOf(edtIdNo.getText());
+                String cusPurchasePrice = String.valueOf(edtPurchasePrice.getText());
 
+                Purchase objPurchase = new Purchase();
+
+                objPurchase.setCusIdentification(cusID);
+                objPurchase.setCusName(cusName);
+                objPurchase.setPurchasePrice(cusPurchasePrice);
+
+                EstimateActivity.objAppDatabase.purchaseDAO().insertAll(objPurchase);
+
+                Intent intentMain = new Intent(EstimateActivity.this, MainActivity.class);
+
+                startActivity(intentMain);
+
+                finish();
             }
         });
 
@@ -199,215 +218,215 @@ public class EstimateActivity extends AppCompatActivity {
                 //Do something.
                 if (cbStarter.isChecked()) {
                     //If checked call priceCalculation for decrease price.
-                    decreasePriceCalculation(20);
+                    decreasePriceCalculation(30);
                 } else {
                     //If unchecked call priceCalculation for increase price.
-                    increasePriceCalculation(20);
+                    increasePriceCalculation(30);
                 }
                 break;
             case R.id.cbFuelTank:
                 if (cbFuelTank.isChecked()) {
                     //If checked call priceCalculation for decrease price.
-                    decreasePriceCalculation(20);
+                    decreasePriceCalculation(700);
                 } else {
                     //If unchecked call priceCalculation for increase price.
-                    increasePriceCalculation(20);
+                    increasePriceCalculation(700);
                 }
                 break;
             case R.id.cbAirFilter:
                 if (cbAirFilter.isChecked()) {
                     //If checked call priceCalculation for decrease price.
-                    decreasePriceCalculation(20);
+                    decreasePriceCalculation(40);
                 } else {
                     //If unchecked call priceCalculation for increase price.
-                    increasePriceCalculation(20);
+                    increasePriceCalculation(40);
                 }
                 break;
             case R.id.cbCarburetor:
                 if (cbCarburetor.isChecked()) {
                     //If checked call priceCalculation for decrease price.
-                    decreasePriceCalculation(20);
+                    decreasePriceCalculation(450);
                 } else {
                     //If unchecked call priceCalculation for increase price.
-                    increasePriceCalculation(20);
+                    increasePriceCalculation(450);
                 }
                 break;
             case R.id.cbCylinder:
                 if (cbCylinder.isChecked()) {
                     //If checked call priceCalculation for decrease price.
-                    decreasePriceCalculation(20);
+                    decreasePriceCalculation(2200);
                 } else {
                     //If unchecked call priceCalculation for increase price.
-                    increasePriceCalculation(20);
+                    increasePriceCalculation(2200);
                 }
                 break;
             case R.id.cbMuffler:
                 if (cbMuffler.isChecked()) {
                     //If checked call priceCalculation for decrease price.
-                    decreasePriceCalculation(20);
+                    decreasePriceCalculation(160);
                 } else {
                     //If unchecked call priceCalculation for increase price.
-                    increasePriceCalculation(20);
+                    increasePriceCalculation(160);
                 }
                 break;
             case R.id.cbSwitchOnOff:
                 if (cbSwitchOnOff.isChecked()) {
                     //If checked call priceCalculation for decrease price.
-                    decreasePriceCalculation(20);
+                    decreasePriceCalculation(120);
                 } else {
                     //If unchecked call priceCalculation for increase price.
-                    increasePriceCalculation(20);
+                    increasePriceCalculation(120);
                 }
                 break;
             case R.id.cbCoil:
                 if (cbCoil.isChecked()) {
                     //If checked call priceCalculation for decrease price.
-                    decreasePriceCalculation(20);
+                    decreasePriceCalculation(580);
                 } else {
                     //If unchecked call priceCalculation for increase price.
-                    increasePriceCalculation(20);
+                    increasePriceCalculation(580);
                 }
                 break;
             case R.id.cbFuelTankCap:
                 if (cbFuelTankCap.isChecked()) {
                     //If checked call priceCalculation for decrease price.
-                    decreasePriceCalculation(20);
+                    decreasePriceCalculation(50);
                 } else {
                     //If unchecked call priceCalculation for increase price.
-                    increasePriceCalculation(20);
+                    increasePriceCalculation(50);
                 }
                 break;
             case R.id.cbOilTankCap:
                 if (cbOilTankCap.isChecked()) {
                     //If checked call priceCalculation for decrease price.
-                    decreasePriceCalculation(20);
+                    decreasePriceCalculation(50);
                 } else {
                     //If unchecked call priceCalculation for increase price.
-                    increasePriceCalculation(20);
+                    increasePriceCalculation(50);
                 }
                 break;
             case R.id.cbSparkPlug:
                 if (cbSparkPlug.isChecked()) {
                     //If checked call priceCalculation for decrease price.
-                    decreasePriceCalculation(20);
+                    decreasePriceCalculation(50);
                 } else {
                     //If unchecked call priceCalculation for increase price.
-                    increasePriceCalculation(20);
+                    increasePriceCalculation(50);
                 }
                 break;
             case R.id.cbControlSwitch:
                 if (cbControlSwitch.isChecked()) {
                     //If checked call priceCalculation for decrease price.
-                    decreasePriceCalculation(20);
+                    decreasePriceCalculation(160);
                 } else {
                     //If unchecked call priceCalculation for increase price.
-                    increasePriceCalculation(20);
+                    increasePriceCalculation(160);
                 }
                 break;
             case R.id.cbBrushCutterBlade:
                 if (cbBrushCutterBlade.isChecked()) {
                     //If checked call priceCalculation for decrease price.
-                    decreasePriceCalculation(20);
+                    decreasePriceCalculation(150);
                 } else {
                     //If unchecked call priceCalculation for increase price.
-                    increasePriceCalculation(20);
+                    increasePriceCalculation(150);
                 }
                 break;
             case R.id.cbGearDiver:
                 if (cbGearDiver.isChecked()) {
                     //If checked call priceCalculation for decrease price.
-                    decreasePriceCalculation(20);
+                    decreasePriceCalculation(750);
                 } else {
                     //If unchecked call priceCalculation for increase price.
-                    increasePriceCalculation(20);
+                    increasePriceCalculation(750);
                 }
                 break;
             case R.id.cbMainPipe:
                 if (cbMainPipe.isChecked()) {
                     //If checked call priceCalculation for decrease price.
-                    decreasePriceCalculation(20);
+                    decreasePriceCalculation(580);
                 } else {
                     //If unchecked call priceCalculation for increase price.
-                    increasePriceCalculation(20);
+                    increasePriceCalculation(580);
                 }
                 break;
             case R.id.cbShaft:
                 if (cbShaft.isChecked()) {
                     //If checked call priceCalculation for decrease price.
-                    decreasePriceCalculation(20);
+                    decreasePriceCalculation(280);
                 } else {
                     //If unchecked call priceCalculation for increase price.
-                    increasePriceCalculation(20);
+                    increasePriceCalculation(280);
                 }
                 break;
             case R.id.cbAirChamber:
                 if (cbAirChamber.isChecked()) {
                     //If checked call priceCalculation for decrease price.
-                    decreasePriceCalculation(20);
+                    decreasePriceCalculation(350);
                 } else {
                     //If unchecked call priceCalculation for increase price.
-                    increasePriceCalculation(20);
+                    increasePriceCalculation(350);
                 }
                 break;
             case R.id.cbAdjustSet:
                 if (cbAdjustSet.isChecked()) {
                     //If checked call priceCalculation for decrease price.
-                    decreasePriceCalculation(20);
+                    decreasePriceCalculation(580);
                 } else {
                     //If unchecked call priceCalculation for increase price.
-                    increasePriceCalculation(20);
+                    increasePriceCalculation(580);
                 }
                 break;
             case R.id.cbDischargeMetal:
                 if (cbDischargeMetal.isChecked()) {
                     //If checked call priceCalculation for decrease price.
-                    decreasePriceCalculation(20);
+                    decreasePriceCalculation(350);
                 } else {
                     //If unchecked call priceCalculation for increase price.
-                    increasePriceCalculation(20);
+                    increasePriceCalculation(350);
                 }
                 break;
             case R.id.cbSuctionMetal:
                 if (cbSuctionMetal.isChecked()) {
                     //If checked call priceCalculation for decrease price.
-                    decreasePriceCalculation(20);
+                    decreasePriceCalculation(550);
                 } else {
                     //If unchecked call priceCalculation for increase price.
-                    increasePriceCalculation(20);
+                    increasePriceCalculation(550);
                 }
                 break;
             case R.id.cbPistonSet:
                 if (cbPistonSet.isChecked()) {
                     //If checked call priceCalculation for decrease price.
-                    decreasePriceCalculation(20);
+                    decreasePriceCalculation(220);
                 } else {
                     //If unchecked call priceCalculation for increase price.
-                    increasePriceCalculation(20);
+                    increasePriceCalculation(220);
                 }
                 break;
             case R.id.cbRopeReel:
                 if (cbRopeReel.isChecked()) {
                     //If checked call priceCalculation for decrease price.
-                    decreasePriceCalculation(20);
+                    decreasePriceCalculation(280);
                 } else {
                     //If unchecked call priceCalculation for increase price.
-                    increasePriceCalculation(20);
+                    increasePriceCalculation(280);
                 }
                 break;
             case R.id.cbPressureGauge:
                 if (cbPressureGauge.isChecked()) {
                     //If checked call priceCalculation for decrease price.
-                    decreasePriceCalculation(20);
+                    decreasePriceCalculation(180);
                 } else {
                     //If unchecked call priceCalculation for increase price.
-                    increasePriceCalculation(20);
+                    increasePriceCalculation(180);
                 }
                 break;
             case R.id.cbPaint:
                 if (cbPaint.isChecked()) {
-                    decreasePriceCalculation(20);
+                    decreasePriceCalculation(120);
                 } else {
-                    increasePriceCalculation(20);
+                    increasePriceCalculation(120);
                 }
                 break;
                 default:
@@ -430,6 +449,8 @@ public class EstimateActivity extends AppCompatActivity {
         spn = findViewById(R.id.spinner_list_equip);
         btnPurchase = findViewById(R.id.btnPurchase);
 
+        edtNameInfo = findViewById(R.id.edt_name_info);
+        edtIdNo = findViewById(R.id.edt_id_info);
         edtPurchasePrice = findViewById(R.id.edt_purchase_price);
 
         cbStarter = findViewById(R.id.cbStarter);

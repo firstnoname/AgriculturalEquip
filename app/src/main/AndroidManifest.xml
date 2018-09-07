@@ -18,8 +18,8 @@
         </activity>
         <activity android:name=".EstimateActivity" />
         <activity android:name=".HistoryActivity" />
-        <activity android:name=".EquipActivity" />
-        <activity android:name=".Equip_Main_Activity"></activity>
+        <activity android:name=".Equip_Main_Activity" />
+        <activity android:name=".EstimateMainActivity"></activity>
     </application>
 
 </manifest>

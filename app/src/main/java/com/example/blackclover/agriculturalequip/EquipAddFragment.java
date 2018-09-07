@@ -27,11 +27,9 @@ public class EquipAddFragment extends Fragment {
             cbBrushCutterBlade, cbGearDiver, cbMainPipe, cbShaft, cbAirChamber, cbAdjustSet,
             cbDischargeMetal, cbSuctionMetal, cbPistonSet, cbRopeReel, cbPressureGauge, cbPaint;
 
-
     public EquipAddFragment() {
         // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -222,7 +220,6 @@ public class EquipAddFragment extends Fragment {
                 objEquipment.setStarterRopeReel(ropeReel);
                 objEquipment.setPressureGauge(pressureGauge);
                 objEquipment.setPaint(paint);
-
 
                 Equip_Main_Activity.objAppDatabase.objEquipDAO().insertAll(objEquipment);
                 Toast.makeText(getActivity(), equipName + " has ben added. ", Toast.LENGTH_SHORT).show();

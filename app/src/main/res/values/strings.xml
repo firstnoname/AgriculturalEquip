@@ -8,6 +8,9 @@
     <string name="btn_menu_manage_equipment">จัดการอุปกรณ์</string>
     <string name="btn_history">ดูประวัติการซื้อ</string>
 
+    <string name="btn_estimate">ประเมิณ</string>
+    <string name="btn_list_estimate">ประวัติการซื้อ</string>
+
     <string name="hint_equip_name">ชื่อรุ่น</string>
     <string name="hint_equip_price">ราคาเครื่อง</string>
     <string name="hint_name_info">ใส่ชื่อ-นามสกุล</string>
