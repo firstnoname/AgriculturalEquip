@@ -23,6 +23,7 @@ import java.util.List;
 public class EstimateActivity extends AppCompatActivity {
 
     public static AppDatabase objAppDatabase;
+    public static AppDatabase purchaseDatabase;
 
     private Spinner spn;
     private List<String> arrList = new ArrayList<>();
@@ -45,6 +46,7 @@ public class EstimateActivity extends AppCompatActivity {
 
         //Get data from database.
         objAppDatabase = Room.databaseBuilder(getApplicationContext(), AppDatabase.class, "equipmentDB").allowMainThreadQueries().build();
+        purchaseDatabase = Room.databaseBuilder(getApplicationContext(), AppDatabase.class, "purchaseDB").allowMainThreadQueries().build();
 
         List<Equip> equipments = EstimateActivity.objAppDatabase.objEquipDAO().getAll();
         arrList.add("กรุณาเลือกอุปกรณ์");
@@ -198,7 +200,7 @@ public class EstimateActivity extends AppCompatActivity {
                 objPurchase.setCusName(cusName);
                 objPurchase.setPurchasePrice(cusPurchasePrice);
 
-                EstimateActivity.objAppDatabase.purchaseDAO().insertAll(objPurchase);
+                EstimateActivity.purchaseDatabase.purchaseDAO().insertAll(objPurchase);
 
                 Intent intentMain = new Intent(EstimateActivity.this, MainActivity.class);
 

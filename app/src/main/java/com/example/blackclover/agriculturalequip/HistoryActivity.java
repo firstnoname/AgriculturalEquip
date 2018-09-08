@@ -31,7 +31,7 @@ public class HistoryActivity extends AppCompatActivity {
         txtListPurchase = findViewById(R.id.txt_display_purchase_info);
 
         String purchaseInfo = "";
-        purchaseInfo = String.valueOf(purchases.size());
+//        purchaseInfo = String.valueOf(purchases.size());
         for (Purchase purchase : purchases) {
 //            Log.d("purchases", "test");
 
@@ -40,9 +40,9 @@ public class HistoryActivity extends AppCompatActivity {
             String cusId = purchase.getCusIdentification();
             String purchasePrice = purchase.getPurchasePrice();
 
-            purchaseInfo = purchaseInfo + "\n\n" + "ID : " + cusId + "\n" +
-                    "Customer name : " + cusName + "\n" +
-                    "Purchased price : " + purchasePrice;
+            purchaseInfo = purchaseInfo + "\n\n" + "รหัสบัตรประชาชน : " + cusId + "\n" +
+                    "ชื่อผู้ขาย : " + cusName + "\n" +
+                    "ราคา : " + purchasePrice;
         }
 
         txtListPurchase.setText(purchaseInfo);
